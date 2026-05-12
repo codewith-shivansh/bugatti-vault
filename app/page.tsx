@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef } from 'react'
+import Link from 'next/link'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import SequenceEngine from '@/components/SequenceEngine'
@@ -457,13 +458,13 @@ export default function Home() {
 
             {/* CTA */}
             <div id="final-cta" style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', marginBottom: '4rem' }}>
-              <button className="cta-btn">
+              <Link href="/configure" className="cta-btn" style={{ textDecoration: 'none' }}>
                 <span>Configure Yours</span>
                 <span style={{ fontSize: '0.9rem' }}>→</span>
-              </button>
-              <button className="cta-btn" style={{ borderColor: 'rgba(240,237,230,0.25)', color: 'rgba(240,237,230,0.6)' }}>
+              </Link>
+              <Link href="/heritage" className="cta-btn" style={{ borderColor: 'rgba(240,237,230,0.25)', color: 'rgba(240,237,230,0.6)', textDecoration: 'none' }}>
                 <span>Explore Heritage</span>
-              </button>
+              </Link>
             </div>
 
             {/* Final bottom specs strip */}

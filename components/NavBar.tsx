@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef } from 'react'
+import Link from 'next/link'
 import gsap from 'gsap'
 
 export default function NavBar() {
@@ -11,6 +12,12 @@ export default function NavBar() {
       { opacity: 1, y: 0, duration: 2, ease: 'power3.out', delay: 0.5 }
     )
   }, [])
+
+  const links = [
+    { label: 'Heritage', href: '/heritage' },
+    { label: 'Models', href: '/models' },
+    { label: 'Atelier', href: '/atelier' },
+  ]
 
   return (
     <nav ref={navRef} style={{
@@ -24,7 +31,7 @@ export default function NavBar() {
       opacity: 0,
     }}>
       {/* Left: Logo */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+      <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none' }}>
         <div style={{
           width: 36, height: 36,
           border: '1px solid rgba(201,169,110,0.6)',
@@ -41,7 +48,7 @@ export default function NavBar() {
           fontWeight: 500,
           textTransform: 'uppercase',
         }}>BUGATTI</span>
-      </div>
+      </Link>
 
       {/* Center: Title */}
       <div style={{
@@ -57,21 +64,22 @@ export default function NavBar() {
 
       {/* Right: Links */}
       <div style={{ display: 'flex', gap: '2.5rem' }}>
-        {['Heritage', 'Models', 'Atelier'].map((item) => (
-          <button key={item} style={{
-            background: 'none', border: 'none', cursor: 'pointer',
+        {links.map((item) => (
+          <Link key={item.label} href={item.href} style={{
+            background: 'none', border: 'none',
             color: 'rgba(240,237,230,0.5)',
             fontSize: '0.65rem',
             letterSpacing: '0.25em',
             fontFamily: 'var(--font-ui)',
             textTransform: 'uppercase',
             transition: 'color 0.4s ease',
+            textDecoration: 'none',
           }}
             onMouseEnter={e => (e.currentTarget.style.color = '#c9a96e')}
             onMouseLeave={e => (e.currentTarget.style.color = 'rgba(240,237,230,0.5)')}
           >
-            {item}
-          </button>
+            {item.label}
+          </Link>
         ))}
       </div>
     </nav>
