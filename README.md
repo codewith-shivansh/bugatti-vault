@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bugatti Vault
 
-## Getting Started
+A cinematic 3D web experience inspired by the world of Bugatti hypercars, luxury reveal films, and futuristic automotive storytelling.
 
-First, run the development server:
+Built with immersive animations, smooth transitions, dramatic lighting, and high-end visual interactions — this project is designed to feel more like a digital unveiling ceremony than a traditional website.
+
+## Preview
+
+Experience the project here:
+[Bugatti Vault Live Demo](https://bugatti-vault.vercel.app?utm_source=chatgpt.com)
+
+Repository:
+[Bugatti Vault GitHub Repository](https://github.com/codewith-shivansh/bugatti-vault?utm_source=chatgpt.com)
+
+---
+
+## Features
+
+* Cinematic landing experience
+* Smooth 3D-inspired transitions
+* Luxury automotive-inspired UI/UX
+* Interactive motion effects
+* Premium typography and lighting aesthetics
+* Responsive modern design
+* Scroll-based storytelling
+* High-performance frontend rendering
+
+---
+
+## Tech Stack
+
+* React
+* Next.js
+* Tailwind CSS
+* Framer Motion
+* Three.js / WebGL-inspired effects
+* Vercel Deployment
+
+---
+
+## Inspiration
+
+Inspired by:
+
+* Bugatti reveal films
+* Luxury automotive launch events
+* Futuristic concept interfaces
+* High-end motion design
+* Interactive storytelling websites
+
+---
+
+## Local Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/codewith-shivansh/bugatti-vault.git
+```
+
+Go to the project directory:
+
+```bash
+cd bugatti-vault
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Vision
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The goal of this project was not just to build a website, but to create an atmosphere.
 
-## Learn More
+Every transition, light movement, and interaction is designed to simulate the feeling of witnessing a hypercar reveal in a futuristic showroom.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Made by [CodeWith Shivansh](https://github.com/codewith-shivansh?utm_source=chatgpt.com)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If you like the project, consider giving it a ⭐ on GitHub.
