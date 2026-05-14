@@ -4,6 +4,7 @@ import Link from 'next/link'
 import gsap from 'gsap'
 import NavBar from '@/components/NavBar'
 import ScrollReveal from '@/components/ScrollReveal'
+import Footer from '@/components/Footer'
 
 const timeline = [
   { year: '1909', event: 'Ettore Bugatti founds the company in Molsheim, Alsace' },
@@ -132,6 +133,7 @@ export default function HeritagePage() {
           </blockquote>
         </ScrollReveal>
       </div>
+      <Footer />
     </>
   )
 }

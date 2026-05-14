@@ -4,6 +4,7 @@ import Link from 'next/link'
 import gsap from 'gsap'
 import NavBar from '@/components/NavBar'
 import ScrollReveal from '@/components/ScrollReveal'
+import Footer from '@/components/Footer'
 
 const options = {
   exterior: ['Nocturne Black', 'Atlantic Blue', 'Italian Red', 'Quartz White', 'Jet Grey', 'Racing Green'],
@@ -158,6 +159,7 @@ export default function ConfigurePage() {
           </div>
         )}
       </div>
+      <Footer />
     </>
   )
 }

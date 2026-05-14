@@ -5,6 +5,7 @@ import Image from 'next/image'
 import gsap from 'gsap'
 import NavBar from '@/components/NavBar'
 import ScrollReveal from '@/components/ScrollReveal'
+import Footer from '@/components/Footer'
 
 const models = [
   { name: 'Chiron', subtitle: 'The Ultimate Grand Tourer', hp: '1,500', speed: '420 km/h', year: '2016', desc: 'The definitive hypercar. Quad-turbocharged W16, 1,500 horsepower, handcrafted perfection.', accel: '2.4s 0-100', img: '/models/chiron.png' },
@@ -146,6 +147,7 @@ export default function ModelsPage() {
           </Link>
         </ScrollReveal>
       </div>
+      <Footer />
     </>
   )
 }

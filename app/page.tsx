@@ -1,11 +1,13 @@
 'use client'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState, useCallback } from 'react'
 import Link from 'next/link'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import SequenceEngine from '@/components/SequenceEngine'
 import NavBar from '@/components/NavBar'
 import CursorLight from '@/components/CursorLight'
+import Preloader from '@/components/Preloader'
+import CookieConsent from '@/components/CookieConsent'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -22,6 +24,8 @@ gsap.registerPlugin(ScrollTrigger)
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null)
   const progressRef = useRef<HTMLDivElement>(null)
+  const [loading, setLoading] = useState(true)
+  const onPreloadComplete = useCallback(() => setLoading(false), [])
 
   useEffect(() => {
     // Progress bar
@@ -168,6 +172,8 @@ export default function Home() {
 
   return (
     <>
+      {loading && <Preloader onComplete={onPreloadComplete} />}
+
       {/* Progress Bar */}
       <div ref={progressRef} className="progress-bar" />
 
@@ -497,6 +503,7 @@ export default function Home() {
         </section>
 
       </main>
+      <CookieConsent />
     </>
   )
 }

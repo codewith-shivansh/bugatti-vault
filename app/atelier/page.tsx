@@ -4,6 +4,7 @@ import Link from 'next/link'
 import gsap from 'gsap'
 import NavBar from '@/components/NavBar'
 import ScrollReveal from '@/components/ScrollReveal'
+import Footer from '@/components/Footer'
 
 const materials = [
   { name: 'Carbon Fibre Weave', detail: 'Aerospace-grade CFRP with visible twill pattern, hand-laid in Molsheim.', icon: '◈' },
@@ -141,6 +142,7 @@ export default function AtelierPage() {
           </div>
         </ScrollReveal>
       </div>
+      <Footer />
     </>
   )
 }
