@@ -22,7 +22,7 @@ body {
   color: var(--col-white);
   font-family: var(--font-ui);
   overflow-x: hidden;
-  cursor: none;
+  cursor: default;
 }
 
 ::selection { background: rgba(201,169,110,0.25); color: var(--col-white); }
@@ -208,7 +208,7 @@ body {
   font-size: 0.65rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  cursor: none;
+  cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: color 0.5s ease;

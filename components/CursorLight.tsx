@@ -8,6 +8,9 @@ export default function CursorLight() {
   const glowRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    // Hide native cursor only on the page that uses this component
+    document.body.style.cursor = 'none'
+
     const dot = dotRef.current
     const ring = ringRef.current
     const glow = glowRef.current
@@ -39,7 +42,10 @@ export default function CursorLight() {
       })
     })
 
-    return () => window.removeEventListener('mousemove', onMove)
+    return () => {
+      document.body.style.cursor = 'default'
+      window.removeEventListener('mousemove', onMove)
+    }
   }, [])
 
   const base: React.CSSProperties = {

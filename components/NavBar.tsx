@@ -2,11 +2,9 @@
 import { useEffect, useRef } from 'react'
 import Link from 'next/link'
 import gsap from 'gsap'
-import { useTheme } from '@/components/ThemeProvider'
 
 export default function NavBar() {
   const navRef = useRef<HTMLElement>(null)
-  const { theme, toggleTheme } = useTheme()
 
   useEffect(() => {
     gsap.fromTo(navRef.current,
@@ -66,7 +64,7 @@ export default function NavBar() {
         Unveiling Ceremony
       </div>
 
-      {/* Right: Links + Theme Toggle + Login */}
+      {/* Right: Links + Login */}
       <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
         {links.map((item) => (
           <Link key={item.label} href={item.href} style={{
@@ -88,31 +86,6 @@ export default function NavBar() {
 
         {/* Divider */}
         <div style={{ width: '1px', height: '18px', background: 'var(--col-white-faint)' }} />
-
-        {/* Theme Toggle */}
-        <button onClick={toggleTheme} aria-label="Toggle theme" style={{
-          background: 'none', border: '1px solid var(--col-white-faint)',
-          borderRadius: '20px', width: '48px', height: '24px',
-          position: 'relative', cursor: 'pointer',
-          transition: 'border-color 0.3s ease',
-        }}
-          onMouseEnter={e => (e.currentTarget.style.borderColor = 'var(--col-gold)')}
-          onMouseLeave={e => (e.currentTarget.style.borderColor = 'var(--col-white-faint)')}
-        >
-          {/* Thumb */}
-          <div style={{
-            width: '16px', height: '16px', borderRadius: '50%',
-            background: 'var(--col-gold)',
-            position: 'absolute', top: '3px',
-            left: theme === 'dark' ? '4px' : '26px',
-            transition: 'left 0.35s cubic-bezier(0.77, 0, 0.175, 1)',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-          }}>
-            <span style={{ fontSize: '0.5rem', lineHeight: 1 }}>
-              {theme === 'dark' ? '🌙' : '☀️'}
-            </span>
-          </div>
-        </button>
 
         {/* Login */}
         <Link href="/login" style={{

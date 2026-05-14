@@ -99,10 +99,10 @@ export default function HeritagePage() {
           </div>
         </ScrollReveal>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2px', maxWidth: '900px', marginBottom: '5rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2px', maxWidth: '900px', marginBottom: '5rem', alignItems: 'stretch' }}>
           {awards.map((a, i) => (
-            <ScrollReveal key={i} y={30} delay={i * 0.12}>
-              <div className="hud-panel" style={{ padding: '2rem', transition: 'background 0.4s ease' }}
+            <ScrollReveal key={i} y={30} delay={i * 0.12} style={{ height: '100%' }}>
+              <div className="hud-panel" style={{ padding: '2rem', transition: 'background 0.4s ease', height: '100%', display: 'flex', flexDirection: 'column' }}
                 onMouseEnter={e => (e.currentTarget.style.background = 'rgba(201,169,110,0.06)')}
                 onMouseLeave={e => (e.currentTarget.style.background = 'rgba(8,8,7,0.55)')}
               >
