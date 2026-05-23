@@ -3,6 +3,7 @@
 <div align="center">
   <p><strong>A cinematic luxury automotive web experience inspired by the world of Bugatti hypercars.</strong></p>
   <p>Designed to explore the intersection of high-end digital storytelling, modern UI/UX engineering, and performance-driven motion design.</p>
+  <p>🎥 <strong><a href="https://youtu.be/bJPGa74CxkY">Watch the Demo Video</a></strong></p>
 </div>
 
 ---
@@ -95,8 +96,7 @@ As a **UI/UX Frontend Developer**, my goal is to bridge the gap between design a
 I specialize in building immersive web applications that focus on premium aesthetics, micro-interactions, and flawless performance. 
 
 - **GitHub:** [codewith-shivansh](https://github.com/codewith-shivansh)
-- **Portfolio:** [codewithshivansh.com](https://www.codewithshivansh.com)
-- **LinkedIn:** [Shivansh](https://www.linkedin.com/in/codewith-shivansh-01a032233)
+- **LinkedIn:** [Shivansh Kumar](https://www.linkedin.com/in/shivansh-kumar-9779a0392/)
 
 ---
 
